@@ -1,4 +1,4 @@
-import app from "./index.js"
+import app from "./index1js"
 import Register from "./register.js"
 // import khi đến đoạn go to Register
 
