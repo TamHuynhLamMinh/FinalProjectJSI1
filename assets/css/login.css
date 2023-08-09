@@ -1,0 +1,85 @@
+
+
+body {
+    background-color: #000;
+    font-family: 'Times New Roman', Times, serif, sans-serif;
+  }
+  
+  #login-box {
+    position: relative;
+    margin: 5% auto;
+    width: 400px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  }
+  
+  #login-box .left {
+    float: left;
+    width: 60%;
+  }
+  
+  #login-box h1 {
+    font-size: 32px;
+    margin: 0 0 20px 0;
+  }
+  
+  #login-box input[type="text"],
+  #login-box input[type="password"],
+  #login-box input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    font-size: 18px;
+  }
+  
+  #login-box input[type="submit"] {
+    background-color: #4caf50;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  #login-box .right {
+    float: right;
+    width: 35%;
+    padding-top: 70px;
+  }
+  
+  #login-box .loginwith {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 18px;
+  }
+  
+  #login-box .or {
+    text-align: center;
+    font-size: 16px;
+    margin-top: 20px;
+  }
+  
+  #login-box .social-signin {
+    margin-bottom: 20px;
+  }
+  
+  #login-box .social-signin a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  #login-box .facebook {
+    background-color: #3b5998;
+    color: #fff;
+  }
+  
+  #login-box .instagram {
+    background-color: #e4405f;
+    color: #fff;
+  }
+  
+  #login-box .google {
+    background-color: #dd4b39;
+    color: #fff;
+  }
+  
