@@ -51,8 +51,8 @@ https://templatemo.com/tm-579-cyborg-gaming
             <div class="col-12">
                 <nav class="main-nav">
                     <!-- ***** Logo Start ***** -->
-                    <a href="index.html" class="logo">
-                        <img src="assets/images/logo.png" alt="">
+                    <a href="index1.html" class="logo">
+                        <img src="assets/images/GSlogo.jpg" alt="">
                     </a>
                     <!-- ***** Logo End ***** -->
                     <!-- ***** Search End ***** -->
@@ -60,16 +60,37 @@ https://templatemo.com/tm-579-cyborg-gaming
                       <form id="search" action="#">
                         <input type="text" placeholder="Type Something" id='searchText' name="searchKeyword" onkeypress="handle" />
                         <i class="fa fa-search"></i>
+                        <div id="dropdown-search">
+                          <ul>
+                            <li><a class="dropdown-item" href="#">Rabbit Race</a></li>
+                            <li><a class="dropdown-item" href="#">Chirstmas Countdown</a></li>
+                            <li><a class="dropdown-item" href="#">Cat Coffee</a></li>
+                            <li><a class="dropdown-item" href="#">Cinamon Cafe</a></li>
+                            <li><a class="dropdown-item" href="#">Pusheen Cafe</a></li>
+                          </ul>
+                        </div>
                       </form>
                     </div>
                     <!-- ***** Search End ***** -->
                     <!-- ***** Menu Start ***** -->
                     <ul class="nav">
-                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index1.html">Home</a></li>
                         <li><a href="browse.html">Browse</a></li>
                         <li><a href="details.html">Details</a></li>
                         <li><a href="streams.html" class="active">Streams</a></li>
-                        <li><a href="profile.html">Profile <img src="https://i.pinimg.com/originals/85/be/94/85be94350b6cefd78140c8c8232c75e5.gif" alt=""></a></li>
+                        <li id="dropdown-button" onmouseenter="showDropdown()"
+                  onmouseleave="hideDropdown()">
+                  <div class="dropdown">
+                    <a href="profile.html" class="active">Profile <img
+                        src="https://i.pinimg.com/originals/85/be/94/85be94350b6cefd78140c8c8232c75e5.gif"
+                        alt></a>
+                  </div>
+                  <div id="dropdown-content">
+                    <a href="signup.html" class="dropdown-content-item">Sign Up</a>
+                    <a href="login.html" class="dropdown-content-item">Log In</a>
+                    <a href class="dropdown-content-item">Languages</a>
+                  </div>
+                </li>
                     </ul>   
                     <a class='menu-trigger'>
                         <span>Menu</span>
@@ -473,6 +494,7 @@ https://templatemo.com/tm-579-cyborg-gaming
   <script src="assets/js/tabs.js"></script>
   <script src="assets/js/popup.js"></script>
   <script src="assets/js/custom.js"></script>
+  <script src="assets/js/dropdown.js"></script>
 
 
   </body>

@@ -52,7 +52,7 @@ export default function Sidebar() {
             <Link to={"/"} className="menu__logo flex-container text--white">
               <HomeRoundedIcon className="home__icon" />
               <h1>
-                TChat<span>&#127826;</span>
+                Cleveland
               </h1>
             </Link>
             <div className="menu__user flex-container border--primary ">

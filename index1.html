@@ -4,229 +4,310 @@
   <head>
 
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet">
 
-    <title>DreamLand - Main</title>
+    <title>Cleveland</title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
 
     <!-- Additional CSS Files -->
     <link rel="stylesheet" href="assets/css/fontawesome.css">
     <link rel="stylesheet" href="assets/css/templatemo-cyborg-gaming.css">
     <link rel="stylesheet" href="assets/css/owl.css">
     <link rel="stylesheet" href="assets/css/animate.css">
-    <link rel="stylesheet"href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <link rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
 
-</head>
+  </head>
 
-<body>
+  <body>
 
-  <div id="js-preloader" class="js-preloader">
-    <div class="preloader-inner">
-      <span class="dot"></span>
-      <div class="dots">
-        <span></span>
-        <span></span>
-        <span></span>
+    <div id="js-preloader" class="js-preloader">
+      <div class="preloader-inner">
+        <span class="dot"></span>
+        <div class="dots">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
       </div>
     </div>
-  </div>
-  
-  <header class="header-area header-sticky">
-    <div class="container">
+
+    <header class="header-area header-sticky">
+      <div class="container">
         <div class="row">
-            <div class="col-12">
-                <nav class="main-nav">
-                    <!-- ***** Logo Start ***** -->
-                    <a href="http://localhost:5173" class="logo">
-                        <img src="assets/images/logo.png" alt="">
-                    </a>
-                    <!-- ***** Logo End ***** -->
-                    <!-- ***** Search End ***** -->
-                    <div class="search-input">
-                      <form id="search" action="#">
-                        <input type="text" placeholder="Type Something" id='searchText' name="searchKeyword" onkeypress="handle" />
-                        <i class="fa fa-search"></i>
-                      </form>
-                    </div>
-                    
-                    <ul class="nav">
-                        <li><a href="index1.html" class="active">Home</a></li>
-                        <li><a href="browse.html">Browse</a></li>
-                        <li><a href="details.html">Details</a></li>
-                        <li><a href="streams.html">Streams</a></li>
-                        <li>
-                            <a href="profile.html">Profile <img src="https://i.pinimg.com/originals/85/be/94/85be94350b6cefd78140c8c8232c75e5.gif" alt=""></a>
-                        </li>
-                    </ul>   
-                    <a class='menu-trigger'>
-                        <span>Menu</span>
-                    </a>
-                    <!-- ***** Menu End ***** -->
-                </nav>
-            </div>
-        </div>
-    </div>
-  </header>
-  <!-- ***** Header Area End ***** -->
-
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-12">
-        <div class="page-content">
-
-          <!-- ***** Banner Start ***** -->
-          <div class="main-banner">
-            <div class="row">
-              <div class="col-lg-7">
-                <div class="header-text">
-                  <h6>Welcome To Cyborg</h6>
-                  <h4><em>Browse</em> Our Popular Games Here</h4>
-                  <div class="main-button">
-                    <a href="browse.html">Browse Now</a>
+          <div class="col-12">
+            <nav class="main-nav">
+              <!-- ***** Logo Start ***** -->
+              <a href="index1.html" class="logo">
+                <img src="assets/images/GSlogo.jpg" alt>
+              </a>
+              <!-- ***** Logo End ***** -->
+              <!-- ***** Search End ***** -->
+              <div class="search-input">
+                <form id="search" action="#">
+                  <input type="text" placeholder="Type Something"
+                    id='searchText' name="searchKeyword" onkeypress="handle" />
+                  <i class="fa fa-search"></i>
+                  <div id="dropdown-search">
+                    <ul>
+                      <li><a class="dropdown-item" href="#">Rabbit Race</a></li>
+                      <li><a class="dropdown-item" href="#">Chirstmas Countdown</a></li>
+                      <li><a class="dropdown-item" href="#">Cat Coffee</a></li>
+                      <li><a class="dropdown-item" href="#">Cinamon Cafe</a></li>
+                      <li><a class="dropdown-item" href="#">Pusheen Cafe</a></li>
+                    </ul>
                   </div>
-                </div>
+                </form>
               </div>
-            </div>
+
+              <ul class="nav">
+                <li><a href="index1.html" class="active">Home</a></li>
+                <li><a href="browse.html">Browse</a></li>
+                <li><a href="details.html">Details</a></li>
+                <li><a href="streams.html">Streams</a></li>
+                <li id="dropdown-button" onmouseenter="showDropdown()"
+                  onmouseleave="hideDropdown()">
+                  <div class="dropdown">
+                    <a href="profile.html" class="active">Profile <img
+                        src="https://i.pinimg.com/originals/85/be/94/85be94350b6cefd78140c8c8232c75e5.gif"
+                        alt></a>
+                  </div>
+                  <div id="dropdown-content">
+                    <a href="signup.html" class="dropdown-content-item">Sign Up</a>
+                    <a href="login.html" class="dropdown-content-item">Log In</a>
+                    <a href class="dropdown-content-item">Languages</a>
+                  </div>
+                </li>
+              </ul>
+              <a class='menu-trigger'>
+                <span>Menu</span>
+              </a>
+              <!-- ***** Menu End ***** -->
+            </nav>
           </div>
-          <!-- ***** Banner End ***** -->
-
-          <!-- ***** Most Popular Start ***** -->
-          <div class="most-popular">
-            <div class="row">
-              <div class="col-lg-12">
-                <div class="heading-section">
-                  <h4><em>Most Popular</em> Right Now</h4>
-                </div>
-                <div class="row">
-                  <div class="col-lg-3 col-sm-6">
-                    <div class="item" link="game1.html">
-                      <img src="https://img.itch.zone/aW1nLzc3NzY2MjUuZ2lm/original/epLA%2Ba.gif" alt="">
-                      <h4>Rabbit Race<br><span>Board Game</span></h4>
-                      <ul>
-                        <li><i class="fa-regular fa-heart"></i></i></li>
-                        <li><i class="fa fa-download"></i> 2.3M</li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="col-lg-3 col-sm-6">
-                    <div class="item" link="game2.html">
-                      <img src="https://img.itch.zone/aW1nLzc5NDg0MTYuZ2lm/original/8qITB%2F.gif" alt="">
-                      <h4>Cat Coffee<br><span>Coffee game</span></h4>
-                      <ul>
-                        <li><i class="fa-regular fa-heart"></i></li>
-                        <li><i class="fa fa-download"></i> 2.3M</li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="col-lg-3 col-sm-6">
-                    <div class="item" link="game3.html">
-                      <img src="https://img.itch.zone/aW1nLzk0MjE2NjUucG5n/original/WpB%2Bwx.png" alt="">
-                      <h4>Cinamon Cafe<br><span>Coffee Game</span></h4>
-                      <ul>
-                        <li><i class="fa-regular fa-heart"></i></li>
-                        <li><i class="fa fa-download"></i> 2.3M</li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="col-lg-3 col-sm-6">
-                    <div class="item" link="game4.html">
-                      <img src="https://img.itch.zone/aW1nLzgyMjY2NjIucG5n/315x250%23c/gBk7Aj.png" alt="">
-                      <h4>Pusheen Cafe<br><span>Coffee Game</span></h4>
-                      <ul>
-                        <li><i class="fa-regular fa-heart"></i></li>
-                        <li><i class="fa fa-download"></i> 2.3M</li>
-                      </ul>
-                    </div>
-                  </div>
-                  
-                  <div class="col-lg-12">
-                    <div class="main-button">
-                      <a href="browse.html">Discover Popular</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- ***** Most Popular End ***** -->
-
-          <!-- ***** Gaming Library Start ***** -->
-          <div class="gaming-library">
-            <div class="col-lg-12">
-              <div class="heading-section">
-                <h4><em>Game</em> Library</h4>
-              </div>
-              <div class="item" link="game1.html">
-                <ul>
-                  <li><img src="https://img.itch.zone/aW1nLzc3NzY2MjUuZ2lm/original/epLA%2Ba.gif" alt="" class="templatemo-item"></li>
-                  <li><h4>Dota 2</h4><span>Sandbox</span></li>
-                  <li><h4>Date Added</h4><span>24/08/2036</span></li>
-                  <li><h4>Hours Played</h4><span>634 H 22 Mins</span></li>
-                  <li><h4>Currently</h4><span>Downloaded</span></li>
-                  <li><div class="main-border-button border-no-active"><a href="#">Play</a></div></li>
-                </ul>
-              </div>
-              <div class="item" link="game1.html">
-                <ul>
-                  <li><img src="https://img.itch.zone/aW1nLzgyMjY2NjIucG5n/315x250%23c/gBk7Aj.png" alt="" class="templatemo-item"></li>
-                  <li><h4>Fortnite</h4><span>Sandbox</span></li>
-                  <li><h4>Date Added</h4><span>22/06/2036</span></li>
-                  <li><h4>Hours Played</h4><span>740 H 52 Mins</span></li>
-                  <li><h4>Currently</h4><span>Downloaded</span></li>
-                  <li><div class="main-border-button"><a href="#">Play</a></div></li>
-                </ul>
-              </div>
-              <div class="item last-item" link="game1.html">
-                <ul>
-                  <li><img src="https://img.itch.zone/aW1nLzEyNTU2ODYyLnBuZw==/original/PzFBAl.png" alt="" class="templatemo-item"></li>
-                  <li><h4>CS-GO</h4><span>Sandbox</span></li>
-                  <li><h4>Date Added</h4><span>21/04/2036</span></li>
-                  <li><h4>Hours Played</h4><span>892 H 14 Mins</span></li>
-                  <li><h4>Currently</h4><span>Downloaded</span></li>
-                  <li><div class="main-border-button border-no-active"><a href="#">Play</a></div></li>
-                </ul>
-              </div>
-            </div>
-            <div class="col-lg-12">
-              <div class="main-button">
-                <a href="profile.html">View Your Library</a>
-              </div>
-            </div>
-          </div>
-          <!-- ***** Gaming Library End ***** -->
         </div>
       </div>
-    </div>
-  </div>
-  
-  <footer>
+    </header>
+    <!-- ***** Header Area End ***** -->
+
     <div class="container">
       <div class="row">
         <div class="col-lg-12">
-          <p>DreamLand<a href="index.html">Game Web</a>
+          <div class="page-content">
+
+            <!-- ***** Banner Start ***** -->
+            <div class="main-banner">
+              <div class="row">
+                <div class="col-lg-7">
+                  <div class="header-text">
+                    <h6>Welcome To Cyborg</h6>
+                    <h4><em>Browse</em> Our Popular Games Here</h4>
+                    <div class="main-button">
+                      <a href="browse.html">Browse Now</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- ***** Banner End ***** -->
+
+            <!-- ***** Most Popular Start ***** -->
+            <div class="most-popular">
+              <div class="row">
+                <div class="col-lg-12">
+                  <div class="heading-section">
+                    <h4><em>Most Popular</em> Right Now</h4>
+                  </div>
+                  <div class="row">
+                    <div class="col-lg-3 col-sm-6">
+                      <div class="item" link="game1.html">
+                        <img src="https://img.itch.zone/aW1nLzc3NzY2MjUuZ2lm/original/epLA%2Ba.gif" alt="">
+                        <h4>Rabbit Race<br><span>Board Game</span></h4>
+                        <ul>
+                          <li><i class="fa-regular fa-heart"></i></i></li>
+                          <li><i class="fa fa-download"></i> 2.3M</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                      <div class="item" link="game2.html">
+                        <img src="https://img.itch.zone/aW1nLzc5NDg0MTYuZ2lm/original/8qITB%2F.gif" alt="">
+                        <h4>Cat Coffee<br><span>Coffee game</span></h4>
+                        <ul>
+                          <li><i class="fa-regular fa-heart"></i></li>
+                          <li><i class="fa fa-download"></i> 2.3M</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                      <div class="item" link="game3.html">
+                        <img src="https://img.itch.zone/aW1nLzk0MjE2NjUucG5n/original/WpB%2Bwx.png" alt="">
+                        <h4>Cinamon Cafe<br><span>Coffee Game</span></h4>
+                        <ul>
+                          <li><i class="fa-regular fa-heart"></i></li>
+                          <li><i class="fa fa-download"></i> 2.3M</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                      <div class="item" link="game4.html">
+                        <img src="https://img.itch.zone/aW1nLzgyMjY2NjIucG5n/315x250%23c/gBk7Aj.png" alt="">
+                        <h4>Pusheen Cafe<br><span>Coffee Game</span></h4>
+                        <ul>
+                          <li><i class="fa-regular fa-heart"></i></li>
+                          <li><i class="fa fa-download"></i> 2.3M</li>
+                        </ul>
+                      </div>
+                    </div>
+                   
+                    <div class="col-lg-12">
+                      <div class="main-button">
+                        <a href="browse.html">Discover Popular</a>
+                      </div>
+                    </div>
+                  </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- ***** Most Popular End ***** -->
+
+            <!-- ***** Gaming Library Start ***** -->
+            <div class="gaming-library">
+              <div class="col-lg-12">
+                <div class="heading-section">
+                  <h4><em>Game</em> Library</h4>
+                </div>
+                <div class="item" link="game1.html">
+                  <ul>
+                    <li><img
+                        src="https://img.itch.zone/aW1nLzc3NzY2MjUuZ2lm/original/epLA%2Ba.gif"
+                        alt class="templatemo-item"></li>
+                    <li><h4>Dota 2</h4><span>Sandbox</span></li>
+                    <li><h4>Date Added</h4><span>24/08/2036</span></li>
+                    <li><h4>Hours Played</h4><span>634 H 22 Mins</span></li>
+                    <li><h4>Currently</h4><span>Downloaded</span></li>
+                    <li><div class="main-border-button border-no-active"><a
+                          href="#">Play</a></div></li>
+                  </ul>
+                </div>
+                <div class="item" link="game1.html">
+                  <ul>
+                    <li><img
+                        src="https://img.itch.zone/aW1nLzgyMjY2NjIucG5n/315x250%23c/gBk7Aj.png"
+                        alt class="templatemo-item"></li>
+                    <li><h4>Fortnite</h4><span>Sandbox</span></li>
+                    <li><h4>Date Added</h4><span>22/06/2036</span></li>
+                    <li><h4>Hours Played</h4><span>740 H 52 Mins</span></li>
+                    <li><h4>Currently</h4><span>Downloaded</span></li>
+                    <li><div class="main-border-button"><a href="#">Play</a></div></li>
+                  </ul>
+                </div>
+                <div class="item last-item" link="game1.html">
+                  <ul>
+                    <li><img
+                        src="https://img.itch.zone/aW1nLzEyNTU2ODYyLnBuZw==/original/PzFBAl.png"
+                        alt class="templatemo-item"></li>
+                    <li><h4>CS-GO</h4><span>Sandbox</span></li>
+                    <li><h4>Date Added</h4><span>21/04/2036</span></li>
+                    <li><h4>Hours Played</h4><span>892 H 14 Mins</span></li>
+                    <li><h4>Currently</h4><span>Downloaded</span></li>
+                    <li><div class="main-border-button border-no-active"><a
+                          href="#">Play</a></div></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-12">
+                <div class="main-button">
+                  <a href="profile.html">View Your Library</a>
+                </div>
+              </div>
+            </div>
+            <!-- ***** Gaming Library End ***** -->
+          </div>
         </div>
       </div>
     </div>
-  </footer>
 
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <p>DreamLand<a href="index.html">Game Web</a>
+            </div>
+          </div>
+        </div>
+      </footer>
 
-  <!-- Scripts -->
-  <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+      <!-- Scripts -->
+      <!-- Bootstrap core JavaScript -->
+      <script src="vendor/jquery/jquery.min.js"></script>
+      <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
 
-  <script src="assets/js/isotope.min.js"></script>
-  <script src="assets/js/owl-carousel.js"></script>
-  <script src="assets/js/tabs.js"></script>
-  <script src="assets/js/popup.js"></script>
-  <script src="assets/js/custom.js"></script>
-  <script src="assets/js/dropdown.js"></script>
-
-  </body>
+      <script src="assets/js/isotope.min.js"></script>
+      <script src="assets/js/owl-carousel.js"></script>
+      <script src="assets/js/tabs.js"></script>
+      <script src="assets/js/popup.js"></script>
+      <script src="assets/js/custom.js"></script>
+      <script src="assets/js/dropdown.js"></script>
+      <!--<script>
+    let gamesx = [
+  {
+    name: "Rabbit Races",
+    image:
+      "https://cdna.artstation.com/p/assets/images/images…-lands-mushroom-and-trees-island-1.gif?1665683104",
+    category: "broadgame",
+  },
+  {
+    name: "Chirstmas Countdown",
+    image:
+      "https://cdna.artstation.com/p/assets/images/images…-lands-mushroom-and-trees-island-1.gif?1665683104",
+    category: "sandbox",
+  },
+  {
+    name: "Cat Coffee",
+    image:
+      "https://cdna.artstation.com/p/assets/images/images…-lands-mushroom-and-trees-island-1.gif?1665683104",
+    category: "sandbox",
+  },
+  {
+    name: "Cinamon Cafe",
+    image:
+      "https://cdna.artstation.com/p/assets/images/images…-lands-mushroom-and-trees-island-1.gif?1665683104",
+    category: "sandbox",
+  },
+  {
+    name: "Pusheen Cafe",
+    image:
+      "https://cdna.artstation.com/p/assets/images/images…-lands-mushroom-and-trees-island-1.gif?1665683104",
+    category: "sandbox",
+  },
+];
+  const gameList = document.getElementById("game-list");
+  let html = gamesx.map((game) => {
+    console.log(game.image);
+    return `
+    <div class="item" link="game1.html">
+      <ul>
+        <li><img src="${game.image}" alt="a" class="templatemo-item"></li>
+        <li><h4>${game.name}</h4><span>${game.category}</span></li>
+        <li><h4>Date Added</h4><span>24/08/2036</span></li>
+        <li><h4>Hours Played</h4><span>634 H 22 Mins</span></li>
+        <li><h4>Currently</h4><span>Downloaded</span></li>
+        <li><div class="main-border-button border-no-active"><a href="#">Play</a></div></li>
+      </ul>
+    </div>
+    `;
+  }).join("");
+  gameList.innerHTML = html;
+  </script>-->
+    </body>
 
 </html>

@@ -1754,3 +1754,7 @@ body {
   border: 1px solid #ccc;
   z-index: 1;
 }
+
+#dropdown-search {
+  flex-direction: column;
+}
