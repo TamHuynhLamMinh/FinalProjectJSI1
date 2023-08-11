@@ -15,30 +15,35 @@ let games = [
     image:
       "https://cdna.artstation.com/p/assets/images/images…-lands-mushroom-and-trees-island-1.gif?1665683104",
     category: "broadgame",
+    link: "game1.html",
   },
   {
     name: "Chirstmas Countdown",
     image:
       "https://cdna.artstation.com/p/assets/images/images…-lands-mushroom-and-trees-island-1.gif?1665683104",
     category: "sandbox",
+    link: "game2.html",
   },
   {
     name: "Cat Coffee",
     image:
       "https://cdna.artstation.com/p/assets/images/images…-lands-mushroom-and-trees-island-1.gif?1665683104",
     category: "sandbox",
+    link: "game3.html",
   },
   {
     name: "Cinamon Cafe",
     image:
       "https://cdna.artstation.com/p/assets/images/images…-lands-mushroom-and-trees-island-1.gif?1665683104",
     category: "sandbox",
+    link: "game4.html",
   },
   {
     name: "Pusheen Cafe",
     image:
       "https://cdna.artstation.com/p/assets/images/images…-lands-mushroom-and-trees-island-1.gif?1665683104",
     category: "sandbox",
+    link: "game5.html",
   },
 ];
 
@@ -103,17 +108,42 @@ document.getElementById("searchText").addEventListener("input", () => {
 
   dropdownSearch.innerHTML = "";
 
+  let string = "<ul>";
   let count = 0;
-  for (const item of database) {
+  for (const item of games) {
     console.log(item);
-    if (item.toLowerCase().includes(searchInput.value.toLowerCase())) {
-      dropdownSearch.innerHTML += `<a href="#" class="dropdown-item">${item}</a>`;
+    if (item.name.toLowerCase().includes(searchInput.value.toLowerCase())) {
+      string += `<li class="img-li"><img src="${item.image}" alt=""><a class="dropdown-item" href="${item.link}">${item.name}</a></li>`;
       count++;
     }
   }
+  string += "</ul>";
+  dropdownSearch.innerHTML = string;
   if (count == 0) {
     dropdownSearch.style.display = "none";
   } else {
     dropdownSearch.style.display = "flex";
+  }
+});
+
+let gameList = document.getElementById("game-play");
+gameList.addEventListener("click", (event) => {
+  gameList.innerHTML = "";
+  for (let item of games) {
+    gameList.innerHTML += `<div class="col-lg-3 col-sm-6">
+    <div class="item">
+      <div class="thumb">
+        <img
+          src="${item.image}"
+          alt style="border-radius: 23px;">
+        <a href="https://youtu.be/6jY2f6OkpBo"
+          target="_blank"><i class="fa fa-play"></i></a>
+      </div>
+      <div class="down-content">
+        <h4>${item.name}</h4>
+        <span><i class="fa fa-eye"></i> 250</span>
+      </div>
+    </div>
+  </div>`;
   }
 });

@@ -1758,3 +1758,12 @@ body {
 #dropdown-search {
   flex-direction: column;
 }
+
+.img-li {
+  display: flex;
+
+}
+
+.img-li img {
+  width: 50px;
+}

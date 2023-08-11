@@ -133,6 +133,7 @@
                 last_login: dt,
             })
             alert('user loged in');
+            localStorage.setItem('user', JSON.stringify(user));
             window.location.href = "profile.html"
           // ...
           })
@@ -140,7 +141,7 @@
           const errorCode = error.code;
           const errorMessage = error.message;
 
-          alert(erroMessage)
+          alert(errorMessage)
           });
     })
     
@@ -157,18 +158,18 @@
         }
     });
 
-    logout.addEventListener('click', (e)=>{
-        signOut(auth).then(() => {
-        // Sign-out successful.
-            alert('user loged out')
-        }).catch((error) => {
-        // An error happened.
-            const errorCode = error.code;
-            const errorMessage = error.message;
+    // logout.addEventListener('click', (e)=>{
+    //     signOut(auth).then(() => {
+    //     // Sign-out successful.
+    //         alert('user loged out')
+    //     }).catch((error) => {
+    //     // An error happened.
+    //         const errorCode = error.code;
+    //         const errorMessage = error.message;
 
-            alert(erroMessage);
-        });
-    })
+    //         alert(erroMessage);
+    //     });
+    // })
     </script>
     <script src="assets/js/log.js"></script>
 </html>
