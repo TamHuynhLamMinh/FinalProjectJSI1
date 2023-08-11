@@ -31,11 +31,3 @@ window.onload = function() {
       rememberCheckbox.checked = true;
     }
   };
-
-  // Handle the "Remember Me" checkbox state change
-  document.getElementById("remember").addEventListener("change", function() {
-    var rememberCheckbox = document.getElementById("remember");
-
-    // Store the checkbox state in the browser's localStorage
-    localStorage.setItem("rememberMe", rememberCheckbox.checked.toString());
-});
