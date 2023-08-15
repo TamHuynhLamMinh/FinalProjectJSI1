@@ -75,7 +75,7 @@
             validationMessage.style.color = "green";
             return true;
         } else {
-            validationMessage.textContent = "Invalid email.";
+            validationMessage.textContent = "Invalid email. Email pattern: @, .com, .edu, etc.";
             validationMessage.style.color = "red";
             return false;
         }
@@ -135,8 +135,9 @@
             await setDoc(userDocRef, userData);
 
             console.log("User data successfully stored in Firestore with ID: ", user.uid);
-            
+            localStorage.setItem("user", JSON.stringify(user));
             window.location.href = "index1.html";
+
         } catch (error) {
             console.error("Error creating user or storing user data:", error);
         }
