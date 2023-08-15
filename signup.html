@@ -121,6 +121,8 @@
             const userCredential = await createUserWithEmailAndPassword(auth, email, password);
             const user = userCredential.user;
 
+            localStorage.setItem("user", JSON.stringify(user));
+
             const userDocRef = doc(firestore, "users", user.uid);
 
             // User data to be stored
@@ -133,6 +135,8 @@
             await setDoc(userDocRef, userData);
 
             console.log("User data successfully stored in Firestore with ID: ", user.uid);
+            
+            window.location.href = "index.html";
         } catch (error) {
             console.error("Error creating user or storing user data:", error);
         }
