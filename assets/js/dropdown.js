@@ -13,37 +13,72 @@ let games = [
   {
     name: "Rabbit Races",
     image:
-      "https://cdna.artstation.com/p/assets/images/images…-lands-mushroom-and-trees-island-1.gif?1665683104",
+      "assets/images/Rabbit Race.png",
     category: "broadgame",
     link: "game1.html",
   },
   {
     name: "Chirstmas Countdown",
     image:
-      "https://cdna.artstation.com/p/assets/images/images…-lands-mushroom-and-trees-island-1.gif?1665683104",
+      "assets/images/Christmas Countdown.png",
     category: "sandbox",
     link: "game2.html",
   },
   {
     name: "Cat Coffee",
     image:
-      "https://cdna.artstation.com/p/assets/images/images…-lands-mushroom-and-trees-island-1.gif?1665683104",
+      "assets/images/Cat-Coffe.png",
     category: "sandbox",
     link: "game3.html",
   },
   {
     name: "Cinamon Cafe",
     image:
-      "https://cdna.artstation.com/p/assets/images/images…-lands-mushroom-and-trees-island-1.gif?1665683104",
+      "assets/images/Cinamon Cafe.png",
     category: "sandbox",
     link: "game4.html",
   },
   {
     name: "Pusheen Cafe",
     image:
-      "https://cdna.artstation.com/p/assets/images/images…-lands-mushroom-and-trees-island-1.gif?1665683104",
+      "assets/images/Pusheen Cafe.png",
     category: "sandbox",
     link: "game5.html",
+  },
+  {
+    name: "Catch Fish",
+    image:
+      "assets/images/Catch Fish.png",
+    category: "sandbox",
+    link: "game6.html",
+  },
+  {
+    name: "Collect Flowers",
+    image:
+      "assets/images/Collect Flowers.png",
+    category: "sandbox",
+    link: "game7.html",
+  },
+  {
+    name: "Tropical Forest",
+    image:
+      "assets/images/Tropical Forest.png",
+    category: "sandbox",
+    link: "game8.html",
+  },
+  {
+    name: "Cat Math",
+    image:
+      "assets/images/Cat Math.png",
+    category: "sandbox",
+    link: "game9.html",
+  },
+  {
+    name: "The Spelling Bee",
+    image:
+      "assets/images/The Spelling Bee.png",
+    category: "sandbox",
+    link: "game10.html",
   },
 ];
 
@@ -98,6 +133,11 @@ document.getElementById("searchText").addEventListener("input", () => {
     "Cat Coffee",
     "Cinamon Cafe",
     "Pusheen Cafe",
+    "Catch Fish",
+    "Collect Flowers",
+    "Tropical Forest",
+    "Cat Math",
+    "The Spelling Bee",
   ];
   const searchInput = document.getElementById("searchText");
   const dropdownSearch = document.getElementById("dropdown-search");
@@ -141,7 +181,7 @@ gameList.addEventListener("click", (event) => {
       </div>
       <div class="down-content">
         <h4>${item.name}</h4>
-        <span><i class="fa fa-eye"></i> 250</span>
+        <span><i class="fa-solid fa-play"></i> 250</span>
       </div>
     </div>
   </div>`;
