@@ -22,7 +22,7 @@ let games = [
     image:
       "assets/images/Christmas Countdown.png",
     category: "sandbox",
-    link: "game2.html",
+    link: "game13.html",
   },
   {
     name: "Cat Coffee",
@@ -79,6 +79,20 @@ let games = [
       "assets/images/The Spelling Bee.png",
     category: "sandbox",
     link: "game10.html",
+  },
+  {
+    name: "Sushi Stack",
+    image:
+      "assets/images/Sushi Stack.png",
+    category: "sandbox",
+    link: "game11.html",
+  },
+  {
+    name: "Dino Run",
+    image:
+      "assets/images/Dino Run.png",
+    category: "sandbox",
+    link: "game12.html",
   },
 ];
 
@@ -138,6 +152,8 @@ document.getElementById("searchText").addEventListener("input", () => {
     "Tropical Forest",
     "Cat Math",
     "The Spelling Bee",
+    "Sushi Stack",
+    "Dino Run",
   ];
   const searchInput = document.getElementById("searchText");
   const dropdownSearch = document.getElementById("dropdown-search");
