@@ -192,7 +192,7 @@ gameList.addEventListener("click", (event) => {
         <img
           src="${item.image}"
           alt style="border-radius: 23px;">
-        <a href="https://youtu.be/6jY2f6OkpBo"
+        <a href="${item.link}" 
           target="_blank"><i class="fa fa-play"></i></a>
       </div>
       <div class="down-content">
