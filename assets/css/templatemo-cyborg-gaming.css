@@ -1788,3 +1788,30 @@ body {
   color: #e75e8d;
 }
 
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.chat-icon {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #e75e8d;
+  color: white;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.chat-icon:hover {
+  background-color: #e75e8d;
+  transform: scale(1.1);
+}
