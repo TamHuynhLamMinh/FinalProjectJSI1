@@ -142,6 +142,10 @@
             console.error("Error creating user or storing user data:", error);
         }
     })
+
+    if (localStorage.getItem("user") != null) {
+        window.location.href = "index1.html";
+    }
 </script>
     <script src="assets/js/log.js"></script>
 

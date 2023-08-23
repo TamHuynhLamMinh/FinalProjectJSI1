@@ -118,6 +118,8 @@
                 // Signed in 
                 const user = userCredential.user;
                 const dt = new Date();
+                localStorage.setItem('last_login', dt);
+                
 
                 update(ref(database, 'user/' + user.uid), {
                     last_login: dt,
@@ -147,6 +149,10 @@
             // ...
         }
     });
+
+    if (localStorage.getItem('user') != null) {
+        window.location.href = "index1.html"
+    }
 
     // logout.addEventListener('click', (e)=>{
     //     signOut(auth).then(() => {

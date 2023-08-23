@@ -80,8 +80,9 @@
                         alt></a>
                   </div>
                   <div id="dropdown-content">
-                    <a href="signup.html" class="dropdown-content-item">Sign Up</a>
-                    <a href="login.html" class="dropdown-content-item">Log In</a>
+                    <a href="signup.html" id="sign-up-page" class="dropdown-content-item">Sign Up</a>
+                    <a href="login.html" id="log-in-page" class="dropdown-content-item">Log In</a>
+                    <a href="logout.html" id="sign-out-page" class="dropdown-content-item">Sign Out</a>
                   </div>
                 </li>
               </ul>
@@ -262,57 +263,7 @@
       <script src="assets/js/popup.js"></script>
       <script src="assets/js/custom.js"></script>
       <script src="assets/js/dropdown.js"></script>
-      <!--<script>
-    let gamesx = [
-  {
-    name: "Rabbit Races",
-    image:
-      "https://cdna.artstation.com/p/assets/images/images…-lands-mushroom-and-trees-island-1.gif?1665683104",
-    category: "broadgame",
-  },
-  {
-    name: "Chirstmas Countdown",
-    image:
-      "https://cdna.artstation.com/p/assets/images/images…-lands-mushroom-and-trees-island-1.gif?1665683104",
-    category: "sandbox",
-  },
-  {
-    name: "Cat Coffee",
-    image:
-      "https://cdna.artstation.com/p/assets/images/images…-lands-mushroom-and-trees-island-1.gif?1665683104",
-    category: "sandbox",
-  },
-  {
-    name: "Cinamon Cafe",
-    image:
-      "https://cdna.artstation.com/p/assets/images/images…-lands-mushroom-and-trees-island-1.gif?1665683104",
-    category: "sandbox",
-  },
-  {
-    name: "Pusheen Cafe",
-    image:
-      "https://cdna.artstation.com/p/assets/images/images…-lands-mushroom-and-trees-island-1.gif?1665683104",
-    category: "sandbox",
-  },
-];
-  const gameList = document.getElementById("game-list");
-  let html = gamesx.map((game) => {
-    console.log(game.image);
-    return `
-    <div class="item" link="game1.html">
-      <ul>
-        <li><img src="${game.image}" alt="a" class="templatemo-item"></li>
-        <li><h4>${game.name}</h4><span>${game.category}</span></li>
-        <li><h4>Date Added</h4><span>24/08/2036</span></li>
-        <li><h4>Hours Played</h4><span>634 H 22 Mins</span></li>
-        <li><h4>Currently</h4><span>Downloaded</span></li>
-        <li><div class="main-border-button border-no-active"><a href="#">Play</a></div></li>
-      </ul>
-    </div>
-    `;
-  }).join("");
-  gameList.innerHTML = html;
-  </script>-->
+    
     </body>
 
 </html>

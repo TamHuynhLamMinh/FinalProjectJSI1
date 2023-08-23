@@ -1,3 +1,28 @@
+let signUpPage = document.getElementById("sign-up-page");
+let logInPage = document.getElementById("log-in-page");
+let signOutPage = document.getElementById("sign-out-page");
+
+if (localStorage.getItem("last_login")) {
+  let last_login = new Date(localStorage.getItem("last_login"));
+  let current_time = new Date();
+  let time = current_time - last_login;
+  if (time > 1000 * 20) {
+    localStorage.removeItem("last_login");
+    localStorage.removeItem("user");
+  }
+}
+
+if (localStorage.getItem("user")) {
+  signUpPage.style.display = "none";
+  logInPage.style.display = "none";
+  signOutPage.style.display = "block";
+} else {
+  signUpPage.style.display = "block";
+  logInPage.style.display = "block";
+  signOutPage.style.display = "none";
+}
+
+
 function showDropdown() {
   let button = document.getElementById("dropdown-content");
   button.style.display = "flex";

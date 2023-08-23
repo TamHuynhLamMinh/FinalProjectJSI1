@@ -76,8 +76,9 @@
                       src="https://i.pinimg.com/originals/85/be/94/85be94350b6cefd78140c8c8232c75e5.gif" alt></a>
                 </div>
                 <div id="dropdown-content">
-                  <a href="signup.html" class="dropdown-content-item">Sign Up</a>
-                  <a href="login.html" class="dropdown-content-item">Log In</a>
+                  <a href="signup.html" id="sign-up-page" class="dropdown-content-item">Sign Up</a>
+                  <a href="login.html" id="log-in-page" class="dropdown-content-item">Log In</a>
+                  <a href="logout.html" id="sign-out-page" class="dropdown-content-item">Log Out</a>
                 </div>
               </li>
             </ul>
@@ -328,7 +329,8 @@
     const app = initializeApp(firebaseConfig);
     const db = getFirestore(app);
 
-    const user = JSON.parse(localStorage.getItem('user'));
+    if (localStorage.getItem('user') != null) {
+      const user = JSON.parse(localStorage.getItem('user'));
     const uid = user.uid;
 
     // get doc users/uid
@@ -342,6 +344,10 @@
     } else {
       // docSnap.data() will be undefined in this case
       console.log("No such document!");
+    }
+    } else {
+      document.getElementById("user-name").innerHTML = "No User";
+      document.getElementById("user-email").innerHTML = "Please Log In";
     }
 
 
