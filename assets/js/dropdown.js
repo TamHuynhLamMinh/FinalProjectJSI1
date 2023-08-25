@@ -6,7 +6,7 @@ if (localStorage.getItem("last_login")) {
   let last_login = new Date(localStorage.getItem("last_login"));
   let current_time = new Date();
   let time = current_time - last_login;
-  if (time > 1000 * 20) {
+  if (time > 1000 * 60 * 5) {
     localStorage.removeItem("last_login");
     localStorage.removeItem("user");
   }
