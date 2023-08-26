@@ -109,21 +109,18 @@
                   </div>
                   <div class="col-lg-4 align-self-center">
                     <div class="main-info header-text">
-                      <span>Offline</span>
+                      <span id="status">Offline</span>
                       <h4 id="user-name">Tammie Huynh</h4>
                       <p id="user-email">You Haven't Gone Live yet. Go Live By Touching The
                         Button Below.</p>
-                      <div class="main-border-button">
-                        <a href="#">Start Live Stream</a>
-                      </div>
                     </div>
                   </div>
                   <div class="col-lg-4 align-self-center">
                     <ul>
-                      <li>Games Downloaded <span>3</span></li>
-                      <li>Friends Online <span>16</span></li>
-                      <li>Live Streams <span>None</span></li>
-                      <li>Clips <span>29</span></li>
+                      <li>Games Added <span>16</span></li>
+                      <li>Friends Online <span>10</span></li>
+                      <li>Top Player <span>None</span></li>
+                      <li>Rating <span>9</span></li>
                     </ul>
                   </div>
                 </div>
@@ -229,7 +226,7 @@
                     <h4>Hours Played</h4><span>634 H 22 Mins</span>
                   </li>
                   <li>
-                    <h4>Currently</h4><span>Downloaded</span>
+                    <h4>Currently</h4><span>Added</span>
                   </li>
                   <li>
                     <div class="main-border-button"><a href="#">Play</a></div>
@@ -250,7 +247,7 @@
                     <h4>Hours Played</h4><span>745 H 22 Mins</span>
                   </li>
                   <li>
-                    <h4>Currently</h4><span>Downloaded</span>
+                    <h4>Currently</h4><span>Added</span>
                   </li>
                   <li>
                     <div class="main-border-button"><a href="#">Play</a></div>
@@ -270,7 +267,7 @@
                     <h4>Hours Played</h4><span>632 H 46 Mins</span>
                   </li>
                   <li>
-                    <h4>Currently</h4><span>Downloaded</span>
+                    <h4>Currently</h4><span>Added</span>
                   </li>
                   <li>
                     <div class="main-border-button"><a href="#">Play</a></div>
@@ -313,6 +310,10 @@
   <script src="assets/js/custom.js"></script>
   <script src="assets/js/dropdown.js"></script>
   <script type="module">
+    if (localStorage.getItem('user') != null) {
+      document.getElementById("status").innerHTML = "Online";
+    } 
+
     import { initializeApp } from "https://www.gstatic.com/firebasejs/9.22.1/firebase-app.js";
     import { getFirestore, collection, addDoc, doc, setDoc, getDoc } from "https://www.gstatic.com/firebasejs/9.22.1/firebase-firestore.js";
 
